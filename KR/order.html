@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Заказать</title>
+    <style>
+   body {
+    background: #3d2823;
+    color: #F4DED0;
+   }
+   a {
+    text-decoration: none;
+   }
+   a.now {
+   text-decoration: underline
+   }
+   a.link {
+   color: #F4DED0
+   }
+     * {
+    font-family: Tisa Sans Pro, sans-serif;
+    .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    </style>
+</head>
+<body link="#3d2823" vlink="#3d2823" alink="#3d2823">
+<header>
+<table width="90%" align="center" border="0" background="images/bg.png" cellpadding="10">
+    <tbody>
+    <tr>
+        <td rowspan="2"><a href="index.html" target="_self"> Главная </a></td>
+        <td><div class="dropdown">
+            <a href="rec.html" target="_self" class="now"> Рецепты </a>
+            <div class="dropdown-content">
+                <a href="rec.html#apple" target="_self" >Яблочный пирог</a>
+                <a href="rec.html#pumpkin" target="_self" >Тыквенный пай</a>
+            </div>
+        </div></td>
+        <td><a href="sbornik.html" target="_self" > Сборник </a></td>
+        <td><a href="sbornik.html#qa" target="_self"> Задать вопрос </a></td>
+        <td><a href="sbornik.html#rev" target="_self"> Отзывы </a></td>
+        <td><a href="order.html" target="_self"> Заказать </a></td>
+        <td><a href="https://vk.com/feed" target="_blank" title="Мы в ВКонтакте"><img src="images/vk.png"></a></td>
+        <td><a href="https://tlgrm.ru/" target="_blank" title="Мы в Телеграм"><img src="images/tg.png"></a></td>
+    </tr>
+    </tbody>
+</table>
+</header>
+<br>
+<table width="60%" align="center" border="0" cellpadding="2">
+    <tbody>
+<tr>
+        <td align="center">
+            <h1>Заказать сборник</h1>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+        <form method="get" enctype="application/x-www-form-urlencoded">
+            <div>
+                <p>Имя: <input type="text" name="name" placeholder="Ксюша">
+            </div>
+            <div>
+                <p>Количество сборников: <input type="number" name="number" value="1">
+            </div>
+           <div>
+              <p>Вид сборника:
+            <p><input type="radio" name="view" value="pechatn">Печатный</p>
+            <p><input type="radio" name="view" value="electr">Электронный</p>
+           </div>
+            <div>
+               <p>Желаемые рецепты:
+            <p><input type="checkbox" name="koritsa">Булочки с корицей в глазури</p>
+            <p><input type="checkbox" name="apple">Булочки с яблоком</p>
+            <p><input type="checkbox" name="latte">Тыквенный латте</p>
+            <p><input type="checkbox" name="pumpkin">Тыквенный пай</p>
+            <p><input type="checkbox" name="kakao">Нежный какао</p>
+            </div>
+            <div>
+                <p>Дата доставки: <input type="date" name="date">
+            </div>
+            <div>
+                <p>Придумайте пароль: <input type="password" name="password">
+                <p><input type="hidden" name="leng" value="eng">
+            </div>
+            <div>
+                <p><input type="submit" value="Заказать"></p>
+            </div>
+        </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>
